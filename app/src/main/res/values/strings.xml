@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PictureSharing</string>
+    <string name="editTextEmail">Email</string>
+    <string name="editTextPassword">Password</string>
+    <string name="buttonLoginSubmit">Login</string>
+    <string name="buttinCreateNewAccount">Create New Account</string>
+    <string name="editTextNewAccountName">Name</string>
+    <string name="editTextNewAccountEmail">Email</string>
+    <string name="editTextNewAccountPassword">Password</string>
+    <string name="buttonNewAccountSubmit">Submit</string>
+    <string name="buttonNewAccountCancel">Cancel</string>
+    <string name="buttonPhotosLogout">Logout</string>
+    <string name="buttonMyProfile">My Profile</string>
+    <string name="buttonPostPhoto">Post New Photo</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment" >
+
+    <EditText
+        android:id="@+id/editTextLoginEmail"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/editTextEmail"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/editTextPassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLoginEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextLoginEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginEmail" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="380dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/buttonLoginSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginPassword" />
+
+    <Button
+        android:id="@+id/buttonCreateNewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:text="@string/buttinCreateNewAccount"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+</androidx.constraintlayout.widget.ConstraintLayout>
