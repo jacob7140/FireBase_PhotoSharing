@@ -12,4 +12,5 @@
     <string name="buttonPhotosLogout">Logout</string>
     <string name="buttonMyProfile">My Profile</string>
     <string name="buttonPostPhoto">Post New Photo</string>
+    <string name="buttonMyAccountComments">Comments</string>
 </resources>

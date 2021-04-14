@@ -1,18 +1,28 @@
 package com.example.picturesharing;
 
-public class Photo {
-    String createdAt, photoRef;
+import android.net.Uri;
 
-    public Photo(String createdAt, String photoRef) {
-        this.createdAt = createdAt;
+import com.google.firebase.Timestamp;
+
+public class Photo {
+    String photoRef, photoUri;
+    Uri imageUri;
+    Timestamp createdAt;
+
+    public Photo(String photoRef, String photoUri, Timestamp createdAt) {
         this.photoRef = photoRef;
+        this.photoUri = photoUri;
+        this.createdAt = createdAt;
     }
 
-    public String getCreatedAt() {
+    public Photo() {
+    }
+
+    public Timestamp getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(String createdAt) {
+    public void setCreatedAt(Timestamp createdAt) {
         this.createdAt = createdAt;
     }
 
@@ -24,11 +34,29 @@ public class Photo {
         this.photoRef = photoRef;
     }
 
+    public Uri getImageUri() {
+        return imageUri;
+    }
+
+    public void setImageUri(Uri imageUri) {
+        this.imageUri = imageUri;
+    }
+
+    public String getPhotoUri() {
+        return photoUri;
+    }
+
+    public void setPhotoUri(String photoUri) {
+        this.photoUri = photoUri;
+    }
+
     @Override
     public String toString() {
         return "Photo{" +
                 "createdAt='" + createdAt + '\'' +
                 ", photoRef='" + photoRef + '\'' +
+                ", photoUri='" + photoUri + '\'' +
+                ", imageUri=" + imageUri +
                 '}';
     }
 }
